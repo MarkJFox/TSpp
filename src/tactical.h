@@ -130,7 +130,7 @@ public:
     // 00615EC0
     // 00615FB0
     // 00616180
-    // 006163C0
+    bool Add_To_Selectables(ObjectClass* object, Point2D point);
     // 00616440
     // 00616480
     // 006164B0

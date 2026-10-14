@@ -157,7 +157,7 @@ public:
     void Clear_Navigation_List();
     bool Is_Recruitable(const HouseClass* house) const;
     bool Is_On_Priority_Mission() const;
-    // 004A5D10
+    void Draw_Voxel_Shadow(const VoxelObject& voxeldata, int layer, int key, VoxelIndexClass* cache, const Rect& cliprect, const Point2D& point, const Matrix3D& matrix, bool force_cache) const;
     void Link_Droppod();
     // 004A6DE0
     // 004A6F40

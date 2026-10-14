@@ -1923,6 +1923,7 @@ DEFINE_IMPLEMENTATION(Cell Tactical::Click_Cell_Calc(Point2D&) const, 0x006131C0
 DEFINE_IMPLEMENTATION(int Tactical::Cell_Shadow(Cell&, bool), 0x00614F90);
 DEFINE_IMPLEMENTATION(Point2D Tactical::func_60F0F0(Point2D), 0x0060F0F0);
 DEFINE_IMPLEMENTATION(void Tactical::Register_Dirty_Area(Rect, bool), 0x0060FBB0);
+DEFINE_IMPLEMENTATION(bool Tactical::Add_To_Selectables(ObjectClass*, Point2D), 0x006163C0);
 DEFINE_IMPLEMENTATION(void Tactical::Select_These(const Rect& rect, void (*selection_func)(ObjectClass* obj)), 0x00616940);
 DEFINE_IMPLEMENTATION(void Tactical::Debug_Draw_Occupiers(), 0x006173B0);
 DEFINE_IMPLEMENTATION(void Tactical::Debug_Draw_Occupiers_Flags(), 0x006177A0);
@@ -3459,7 +3460,7 @@ DEFINE_IMPLEMENTATION(void FootClass::Queue_Navigation_List(AbstractClass* targe
 DEFINE_IMPLEMENTATION(void FootClass::Clear_Navigation_List(), 0x004A5550);
 DEFINE_IMPLEMENTATION(bool FootClass::Is_Recruitable(const HouseClass*) const, 0x004A55C0);
 DEFINE_IMPLEMENTATION(bool FootClass::Is_On_Priority_Mission() const, 0x004A5620);
-// 004A5D10
+DEFINE_IMPLEMENTATION(void FootClass::Draw_Voxel_Shadow(const VoxelObject&, int, int, VoxelIndexClass*, const Rect&, const Point2D&, const Matrix3D&, bool) const, 0x004A5D10);
 DEFINE_IMPLEMENTATION(void FootClass::Link_Droppod(), 0x004A6370);
 // 004A6DE0
 // 004A6F40
