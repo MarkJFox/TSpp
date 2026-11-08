@@ -256,7 +256,7 @@ public:
     Cell Find_Build_Location(BuildingTypeClass* building, int(__fastcall* callback)(int, Cell&, int, int), int a3 = -1) const;
     // 004C7300
     // 004C7310
-    // 004C7320
+    Cell Find_Upgrade_Location(const BuildingTypeClass* upgrade) const; // 004C7320
     // 004C7470
     // 004C74F0
     bool AI_Build_Defense(int nodeid, DynamicVectorClass<Cell>* cells); // 004C7690

@@ -2816,7 +2816,7 @@ DEFINE_IMPLEMENTATION(bool HouseClass::Has_Prerequisites(const TechnoTypeClass*,
 DEFINE_IMPLEMENTATION(Cell HouseClass::Find_Build_Location(BuildingTypeClass*, int(__fastcall*)(int, Cell&, int, int), int) const, 0x004C6A10);
 // 004C7300
 // 004C7310
-// 004C7320
+DEFINE_IMPLEMENTATION(Cell HouseClass::Find_Upgrade_Location(const BuildingTypeClass*) const, 0x004C7320);
 // 004C7470
 // 004C74F0
 DEFINE_IMPLEMENTATION(bool HouseClass::AI_Build_Defense(int, DynamicVectorClass<Cell>*), 0x004C7690);
@@ -3611,7 +3611,7 @@ DEFINE_IMPLEMENTATION(void BuildingClass::Turn_Off(), 0x00436890);
 // 004369D0
 // 00436A80
 // 00436B20
-// 00436B90
+DEFINE_IMPLEMENTATION(bool BuildingClass::Can_Upgrade(const BuildingTypeClass*, const HouseClass*) const, 0x00436B90);
 // 00436CF0
 DEFINE_IMPLEMENTATION(void BuildingClass::Update_Laser_Fence_Connections(int), 0x00436D50);
 // 00436EC0

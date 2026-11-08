@@ -194,7 +194,7 @@ public:
     // 004369D0
     // 00436A80
     // 00436B20
-    // 00436B90
+    bool Can_Upgrade(const BuildingTypeClass* upgrade, const HouseClass* house) const; // 00436B90
     // 00436CF0
     void Update_Laser_Fence_Connections(int);
     // 00436EC0
